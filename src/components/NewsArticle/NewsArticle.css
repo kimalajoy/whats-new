@@ -1,0 +1,20 @@
+.newsArticle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 300px;
+}
+
+.article-card {
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center; */
+  background-color: thistle;
+}
+
+img {
+  max-width: 100%;
+}
