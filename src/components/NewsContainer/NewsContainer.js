@@ -6,7 +6,7 @@ import NewsArticle from '../NewsArticle/NewsArticle.js'
 
 function NewsContainer (props) {
   return (
-      <div className="app">
+      <div className="news-container">
         {props.news.map(localNews => <NewsArticle key={localNews.id} headline={localNews.headline} img={localNews.img} description={localNews.description} url={localNews.url}/>)}
       </div>
     );
