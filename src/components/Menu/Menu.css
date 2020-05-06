@@ -1,0 +1,23 @@
+.menu-buttons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #83c5be;
+   height: fit-content;
+}
+
+.menuButton {
+  margin: 10px;
+  padding: 5px 5px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  color: #edf6f9;
+  background-color: #006d77;
+  border-radius: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 160px;
+  box-shadow: 2px 5px 10px #343634;
+}

@@ -6,8 +6,14 @@
 
 .app {
   display: flex;
-  background: #141527;
+  background: #006d77;
   height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+h1 {
+  padding: 5px;
+  margin: 5px;
+  color: #83c5be;
 }

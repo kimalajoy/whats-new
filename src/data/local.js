@@ -1,4 +1,4 @@
-const localNews = [
+const local = [
   {
     id: 1,
     headline: 'The Who postpones Denver Concert at the Pepsi Center',
@@ -57,4 +57,4 @@ const localNews = [
   }
 ]
 
-export default localNews;
+export default local;

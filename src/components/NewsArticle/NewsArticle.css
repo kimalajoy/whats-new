@@ -2,14 +2,12 @@
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  /* min-height: 300px; */
   max-width: 30%;
-  height: fit-content;
 }
 
 .article-card {
-
-  background-color: thistle;
+  background-color: #edf6f9;
+  box-shadow: 2px 5px 10px #343634;
 }
 
 img {

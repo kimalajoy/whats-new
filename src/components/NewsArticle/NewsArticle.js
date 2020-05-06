@@ -7,8 +7,8 @@ function NewsArticle (props) {
   return (
     <div className="newsArticle-container">
       <div className ="article-card">
-        <h1 className="heading">{props.headline}</h1>
-        <img src={props.img} alt="Img for article"/>
+        <h2 className="heading">{props.headline}</h2>
+        <img src={props.img} alt={props.headline}/>
         <p>{props.description}</p>
         <a href={props.url}>Link to the Article</a>
       </div>
