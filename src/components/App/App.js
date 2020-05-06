@@ -6,7 +6,8 @@ import tech from '../../data/technology';
 import entertainment from '../../data/entertainment';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js';
-import Menu from '../Menu/Menu.js'
+import Menu from '../Menu/Menu.js';
+import SearchForm from '../SearchForm/SearchForm.js'
 
 class App extends Component {
   constructor() {
@@ -36,7 +37,8 @@ class App extends Component {
   render () {
     return (
       <div>
-        <h1>What's New(s)?</h1>
+        <h1>What's New(s)?</h1> 
+        <SearchForm />
         <Menu news={Object.keys(this.news)} setNews={this.setNews}/>
         <NewsContainer news={this.getNews()}/>
       </div>

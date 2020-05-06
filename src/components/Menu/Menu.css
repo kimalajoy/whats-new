@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   background-color: #83c5be;
-   height: fit-content;
+  height: fit-content;
+  clear: both;
 }
 
 .menuButton {

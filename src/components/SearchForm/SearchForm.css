@@ -1,0 +1,25 @@
+.search-form{
+  float: right;
+  clear: both;
+  width: 50%;
+}
+
+.search-button {
+  align-self: flex-end;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  color: #edf6f9;
+  background-color: #006d77;
+  border-radius: 36px;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 2px 5px 10px #343634;
+}
+
+input {
+  height: 30px;
+  width: 75%;
+}

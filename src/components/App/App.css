@@ -10,10 +10,13 @@
   height: 100vh;
   text-align: center;
   width: 100%;
+  clear: both;
 }
 
 h1 {
   padding: 5px;
   margin: 5px;
   color: #83c5be;
+  width: fit-content;
+ display: inline-block;
 }
