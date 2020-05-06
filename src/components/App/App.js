@@ -22,7 +22,8 @@ class App extends Component {
     };
 
     this.state = {
-      newsKey: 'local'
+      newsKey: 'local',
+      searchTerm: ''
     }
   }
 
@@ -31,14 +32,25 @@ class App extends Component {
   }
 
   getNews(){
-    return this.news[this.state.newsKey];
+    let news = this.news[this.state.newsKey];
+    if(this.state.searchTerm){
+      news = news.filter(searched => {
+        return searched.description.toLowerCase().includes(this.state.searchTerm) || searched.headline.toLowerCase().includes(this.state.searchTerm);
+      })
+    }
+
+    return news;
+  }
+
+  setSearchTerm = (input) => {
+    this.setState({searchTerm: input})
   }
 
   render () {
     return (
       <div>
         <h1>What's New(s)?</h1> 
-        <SearchForm />
+        <SearchForm filter={this.setSearchTerm}/>
         <Menu news={Object.keys(this.news)} setNews={this.setNews}/>
         <NewsContainer news={this.getNews()}/>
       </div>

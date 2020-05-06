@@ -10,7 +10,7 @@ function NewsArticle (props) {
         <h2 className="heading">{props.headline}</h2>
         <img src={props.img} alt={props.headline}/>
         <p>{props.description}</p>
-        <a href={props.url}>Link to the Article</a>
+        <a href={props.url}>Link to the Full Article</a>
       </div>
     </div>
   );
