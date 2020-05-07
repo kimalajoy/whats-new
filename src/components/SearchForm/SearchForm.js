@@ -10,7 +10,12 @@ class SearchForm extends Component {
   }
 
   searchTerms = (e) => {
-    this.setState({searchInput: e.target.value.toLowerCase()})
+    let searchTerm = e.target.value.toLowerCase();
+    this.setState({searchInput: searchTerm}, () =>{
+      if(!searchTerm) {
+        this.props.filter(this.state.searchInput)
+      }
+    });
   }
 
   render() {
@@ -19,7 +24,8 @@ class SearchForm extends Component {
       <input 
         onChange={this.searchTerms} 
         type="text" 
-        placeholder="Search for an article here" />
+        placeholder="Search for an article here"
+        onKeyPress={(e) => (e.key === 'Enter' ?this.props.filter(this.state.searchInput) : null)} />
       <button 
         onClick={() => this.props.filter(this.state.searchInput)} className="search-button">Search</button>
     </div>

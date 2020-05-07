@@ -32,6 +32,8 @@ class App extends Component {
   }
 
   getNews(){
+    console.log();
+    
     let news = this.news[this.state.newsKey];
     if(this.state.searchTerm){
       news = news.filter(searched => {
