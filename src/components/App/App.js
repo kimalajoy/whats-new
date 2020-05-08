@@ -7,7 +7,7 @@ import entertainment from '../../data/entertainment';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js';
 import Menu from '../Menu/Menu.js';
-import SearchForm from '../SearchForm/SearchForm.js'
+import SearchForm from '../SearchForm/SearchForm.js';
 
 class App extends Component {
   constructor() {
@@ -32,8 +32,6 @@ class App extends Component {
   }
 
   getNews(){
-    console.log();
-    
     let news = this.news[this.state.newsKey];
     if(this.state.searchTerm){
       news = news.filter(searched => {
